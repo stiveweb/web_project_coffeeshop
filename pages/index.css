@@ -1,5 +1,158 @@
-.page{
+.page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 80px 40px;
+  background-color: #ffffff;
+}
+
+/* Círculo decorativo de fundo - ajuste conforme seu asset */
+.header__bg-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  z-index: 0;
+}
+
+.header__nav,
+.header__content,
+.header__footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navegação */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.logo__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav__links a:hover {
+  color: #2563eb;
+}
+
+/* Conteúdo principal */
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.header__text {
+  max-width: 480px;
+}
+
+.header__title-highlight {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 40px;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.header__title-main {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.header__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.header__illustration {
+  flex-shrink: 0;
+  max-width: 460px;
+}
+
+.header__illustration img {
+  width: 100%;
+  height: auto;
+}
+
+/* Rodapé do header (horários + endereço) */
+.header__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #475569;
+}
+
+.header__hours p {
+  margin: 2px 0;
+}
+
+.header__address {
+  white-space: nowrap;
+}
+
+/* Responsivo básico */
+@media (max-width: 900px) {
+  .header {
+    padding: 32px 24px;
+  }
+
+  .header__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__footer {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
 }
