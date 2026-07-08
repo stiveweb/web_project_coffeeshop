@@ -3,153 +3,225 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
 
-/* Header - container principal */
+/* ==================== HEADER ==================== */
+
 .header {
   position: relative;
-  overflow: hidden;
-  padding: 48px 80px 40px;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px 40px;
   background-color: #ffffff;
-}
-
-.header__bg-circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
-  background-position: 155% 40%;
+  background-position: center;
   background-size: cover;
-  z-index: 0;
-}
-
-.header__nav,
-.header__content {
-  position: relative;
-  z-index: 1;
 }
 
 /* Navegação */
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 64px;
-}
-
-.logo__icon {
-  width: 80px;
-  height: 80px;
-  margin-left: -55px;
-  margin-top: -55px;
-}
-
-.header__links {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin-top: -30px;
-}
-
-.header__links a {
-  text-decoration: none;
-  color: #0f172a;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.header__links a:hover {
-  color: #2563eb;
-}
-
-/* Conteúdo principal */
-.header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 80px;
-}
-
-.header__text {
-  max-width: 560px;
+.nav {
   position: relative;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header__title-highlight {
+.nav__logo {
+  position: relative;
+  left: -5px;
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-size: 45px;
-  color: #3877ff;
-  margin-bottom: 30px;
+}
+
+.nav__logo img {
+  display: block;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+/* Título e descrição */
+.header__title {
+  margin: 183px 0 0;
+  max-width: 709px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
 }
 
-.header__title-main {
+.header__span-accent {
   display: block;
-  font-size: 40px;
-  font-weight: 550;
-  color: #0f172a;
-  margin-bottom: 20px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__title-line {
+  display: block;
 }
 
 .header__description {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #475569;
-  font-weight: 500;
+  margin-top: 28px;
+  max-width: 683px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.header__illustration {
-  flex-shrink: 0;
-  max-width: 460px;
+/* Imagem posicionada de forma absoluta */
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 80px;
+  width: 646px;
+  height: 568px;
 }
 
-.header__illustration img {
+.header__image img {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* Rodapé do header (horários + endereço) */
+/* Rodapé do header */
 .header__footer {
-  position: relative;
-  z-index: 1;
+  margin-top: auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 13px;
-  color: #475569;
 }
 
-.header__hours p {
-  margin: 2px 0;
+.header__paragraph {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }
 
-.header__address {
-  white-space: nowrap;
+.header__hours .header__paragraph {
+  margin-bottom: 2px;
 }
 
-/* Responsivo básico */
+.header__hours .header__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ==================== SEÇÃO RECEITAS ==================== */
+
+.recipes {
+  position: relative;
+  padding: 100px 80px 80px;
+  background-color: #0a2850;
+  background-image: url("../images/background_recipes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.recipes__title {
+  max-width: 580px;
+  margin: 0 0 24px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #ffffff;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  margin: 0;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.recipes__video-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes__iframe {
+  display: block;
+  width: 480px;
+  height: 273px;
+  border: none;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* ==================== RESPONSIVO BÁSICO ==================== */
+
 @media (max-width: 900px) {
   .header {
     padding: 32px 24px;
   }
 
-  .header__content {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .header__footer {
     flex-direction: column;
-    gap: 8px;
     align-items: flex-start;
+    gap: 8px;
+  }
+
+  .recipes__videos {
+    flex-direction: column;
+    align-items: center;
   }
 }
