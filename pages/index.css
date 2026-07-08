@@ -107,6 +107,7 @@
   right: 80px;
   width: 646px;
   height: 568px;
+  object-fit: contain;
 }
 
 .header__image img {
