@@ -208,6 +208,111 @@
   color: #ffffff;
 }
 
+
+    /* ==================== FORMULÁRIO ==================== */
+
+
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url("images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 80px 120px;
+  text-align: center;
+}
+
+.reservation__title {
+  margin: 0 0 80px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000000;
+}
+
+.reservation__form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 385px;
+  box-sizing: border-box;
+}
+
+.form__label {
+  display: block;
+  margin: 0 0 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: left;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 32px;
+  padding: 15px 20px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  max-width: 385px;
+  margin-top: 60px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 /* ==================== RESPONSIVO BÁSICO ==================== */
 
 @media (max-width: 900px) {
