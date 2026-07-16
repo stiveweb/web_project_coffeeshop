@@ -220,11 +220,12 @@
   background-position: center;
   background-size: cover;
   padding: 100px 80px 120px;
-  text-align: center;
+  
 }
 
 .reservation__title {
-  margin: 0 0 80px;
+  width: fit-content;
+  margin: 0 auto 80px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -296,7 +297,7 @@
   opacity: 70%;
 }
 
-.form__label--checkbox {
+.form__label--inline {
   display: flex;
   align-items: center;
   gap: 12px;
