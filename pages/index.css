@@ -9,7 +9,7 @@
   line-height: 20px;
 }
 
-/* ==================== HEADER ==================== */
+                /* HEADER  */
 
 .header {
   position: relative;
@@ -26,7 +26,7 @@
   background-size: cover;
 }
 
-/* Navegação */
+               /* Navegação */
 .nav {
   position: relative;
   display: flex;
@@ -62,7 +62,7 @@
   color: #2f80ed;
 }
 
-/* Título e descrição */
+          /* Título e descrição */
 .header__title {
   margin: 183px 0 0;
   max-width: 709px;
@@ -100,7 +100,7 @@
   color: #000000;
 }
 
-/* Imagem posicionada de forma absoluta */
+       /* Imagem posicionada de forma absoluta */
 .header__image {
   position: absolute;
   top: 124px;
@@ -117,7 +117,7 @@
   object-fit: contain;
 }
 
-/* Rodapé do header */
+            /* Rodapé do header */
 .header__footer {
   margin-top: auto;
   display: flex;
@@ -143,7 +143,7 @@
   margin-bottom: 0;
 }
 
-/* ==================== SEÇÃO RECEITAS ==================== */
+        /*  SEÇÃO RECEITAS */
 
 .recipes {
   position: relative;
@@ -209,18 +209,18 @@
 }
 
 
-    /* ==================== FORMULÁRIO ==================== */
+    /*  FORMULÁRIO  */
 
 
 
 .reservation {
   background-color: #d9e7ff;
-  background-image: url("images/background_reservation.svg");
+  background-image: url("../images/background_reservation.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 100px 80px 120px;
-  
+
 }
 
 .reservation__title {
@@ -240,6 +240,7 @@
 
 .form {
   max-width: 385px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -297,13 +298,13 @@
   opacity: 70%;
 }
 
-.form__label--inline {
+.form__label_type_checkbox {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 60px;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .form__checkbox {
@@ -314,21 +315,3 @@
   flex-shrink: 0;
 }
 
-/* ==================== RESPONSIVO BÁSICO ==================== */
-
-@media (max-width: 900px) {
-  .header {
-    padding: 32px 24px;
-  }
-
-  .header__footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .recipes__videos {
-    flex-direction: column;
-    align-items: center;
-  }
-}
