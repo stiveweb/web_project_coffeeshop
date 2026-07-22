@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Seu Nome Completo">
+  <meta name="author" content="Pedro Esteves">
   <meta name="description" content="Triple Espresso - Café especial na biblioteca Triple Peaks. Confira nossas receitas, horários e reserve sua mesa.">
   <meta name="keywords" content="café, cafeteria, biblioteca, receitas de café, aeropress, prensa francesa, reserva de mesa">
-  <title>Coffeeshop</title>
-  <!-- GOOGLE FONTS -->
+  <title>Triple Espresso</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- LINK'S CSS -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
-<!-- ESTRUTURA DA PÁGINA -->
+
 <body>
   <div class="page">
 
-    <!-- ==================== HEADER ==================== -->
+    <!--  HEADER  -->
     <header class="header">
       <nav class="nav">
         <a href="#" class="nav__logo">
@@ -61,7 +59,7 @@
 
     <main class="content">
 
-      <!-- ==================== SEÇÃO RECEITAS ==================== -->
+      <!--  SEÇÃO RECEITAS  -->
       <section class="recipes" id="recipes">
         <h2 class="recipes__title">Receitas</h2>
         <p class="recipes__subtitle">
@@ -102,7 +100,7 @@
         </div>
       </section>
 
-      <!-- ==================== SEÇÃO RESERVA ==================== -->
+      <!--  SEÇÃO RESERVA  -->
       <section class="reservation" id="reservation">
         <h2 class="reservation__title">Reservar uma mesa</h2>
 
@@ -166,8 +164,58 @@
 
     </main>
 
+    <!--  FOOTER  -->
+
     <footer class="footer" id="contact">
-    </footer>
+  <div class="footer__content">
+
+    <div class="footer__brand">
+      <a href="#" class="footer__logo">
+        <img
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Logo Triple Espresso"
+        >
+      </a>
+
+      <p class="footer__copyright">
+        &copy; 2026 Pedro Esteves
+      </p>
+    </div>
+
+    <nav class="footer__social">
+      <h2 class="footer__social-heading">
+        Mídia social
+      </h2>
+
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a href="#" class="footer__social-link">
+            <img
+              src="./images/facebook_white.svg"
+              alt="Facebook"
+              class="footer__social-icon"
+            >
+            Facebook
+          </a>
+        </li>
+
+        <li class="footer__list-item">
+          <a href="#" class="footer__social-link">
+            <img
+              src="./images/instagram_white.svg"
+              alt="Instagram"
+              class="footer__social-icon"
+            >
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__circle"></div>
+
+  </div>
+</footer>
   </div>
 </body>
 </html>
